@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b57eyfr1q38e2"
+path="res://.godot/imported/fluorescent_switch1 (1).mp3-05f10fd056476187cf4fb0f7e292c594.mp3str"
+
+[deps]
+
+source_file="res://Sector_Synthesis/fluorescent_switch1 (1).mp3"
+dest_files=["res://.godot/imported/fluorescent_switch1 (1).mp3-05f10fd056476187cf4fb0f7e292c594.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

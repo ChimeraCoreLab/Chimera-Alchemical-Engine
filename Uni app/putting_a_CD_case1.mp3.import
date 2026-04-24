@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ptmnv4hcjdbc"
+path="res://.godot/imported/putting_a_CD_case1.mp3-ca0c75798de04e780bf56e4c96e7eb5f.mp3str"
+
+[deps]
+
+source_file="res://Uni app/putting_a_CD_case1.mp3"
+dest_files=["res://.godot/imported/putting_a_CD_case1.mp3-ca0c75798de04e780bf56e4c96e7eb5f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

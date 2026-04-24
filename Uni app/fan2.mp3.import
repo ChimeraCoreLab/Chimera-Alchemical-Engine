@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ctkv0fcqncrjv"
+path="res://.godot/imported/fan2.mp3-388dee46f694df45976aec49d3cf805a.mp3str"
+
+[deps]
+
+source_file="res://Uni app/fan2.mp3"
+dest_files=["res://.godot/imported/fan2.mp3-388dee46f694df45976aec49d3cf805a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://csfwouxx31t7g"]
+
+[ext_resource type="PackedScene" uid="uid://dtwrf3mlp5v4p" path="res://dust_particles.tscn" id="1_a202f"]
+[ext_resource type="Texture2D" uid="uid://b4lwg07mrxeeu" path="res://Artifacts/key.png" id="2_noarx"]
+
+[sub_resource type="Gradient" id="Gradient_a202f"]
+offsets = PackedFloat32Array(0, 0.179153, 0.299674, 0.700326, 0.788274, 1)
+colors = PackedColorArray(1, 1, 1, 0, 0.972581, 0.972581, 0.972581, 0.507246, 0.945946, 0.945946, 0.945946, 1, 1, 1, 1, 1, 1, 1, 1, 0.561644, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_noarx"]
+gradient = SubResource("Gradient_a202f")
+
+[sub_resource type="Curve" id="Curve_a0tk4"]
+_data = [Vector2(0, 0), 0.0, 2.52403, 0, 0, Vector2(0.488166, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -2.63376, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_r3fl7"]
+curve = SubResource("Curve_a0tk4")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jka67"]
+lifetime_randomness = 0.17
+emission_shape = 3
+emission_box_extents = Vector3(40, 15, 30)
+direction = Vector3(10, 0, 0)
+initial_velocity_min = 0.5
+initial_velocity_max = 1.0
+gravity = Vector3(0.491, 10.166, 0)
+scale_curve = SubResource("CurveTexture_r3fl7")
+color_ramp = SubResource("GradientTexture1D_noarx")
+turbulence_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0tk4"]
+transparency = 1
+albedo_texture = ExtResource("2_noarx")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_r3fl7"]
+material = SubResource("StandardMaterial3D_a0tk4")
+
+[node name="Node3D" type="Node3D" unique_id=810598966]
+
+[node name="DustParticles" parent="." unique_id=254722175 instance=ExtResource("1_a202f")]
+amount = 260
+lifetime = 0.3
+speed_scale = 1.0
+randomness = 1.0
+process_material = SubResource("ParticleProcessMaterial_jka67")
+draw_pass_1 = SubResource("PlaneMesh_r3fl7")

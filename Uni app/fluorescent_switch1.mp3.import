@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c804k3qx2aykf"
+path="res://.godot/imported/fluorescent_switch1.mp3-a849e4fc08570edce862a72f5f01a2eb.mp3str"
+
+[deps]
+
+source_file="res://Uni app/fluorescent_switch1.mp3"
+dest_files=["res://.godot/imported/fluorescent_switch1.mp3-a849e4fc08570edce862a72f5f01a2eb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

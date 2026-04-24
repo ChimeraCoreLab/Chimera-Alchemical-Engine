@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5ghh5gskdals"
+path="res://.godot/imported/unanalyzable.mp3-d2350cf982c47787c61a70c4dc14ba44.mp3str"
+
+[deps]
+
+source_file="res://Uni app/unanalyzable.mp3"
+dest_files=["res://.godot/imported/unanalyzable.mp3-d2350cf982c47787c61a70c4dc14ba44.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

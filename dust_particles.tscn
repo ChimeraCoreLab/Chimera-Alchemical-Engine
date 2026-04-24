@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dtwrf3mlp5v4p"]
+
+[ext_resource type="Texture2D" uid="uid://dqpaw302312s4" path="res://eye3.png" id="1_o51gb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hqgbs"]
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+albedo_color = Color(0.94917506, 0.8886214, 0.8899364, 1)
+albedo_texture = ExtResource("1_o51gb")
+roughness = 0.0
+point_size = 19.6
+fov_override = 87.3
+proximity_fade_enabled = true
+distance_fade_mode = 1
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_svlpy"]
+lifetime_randomness = 0.17
+emission_shape = 3
+emission_box_extents = Vector3(40, 15, 30)
+direction = Vector3(10, 0, 0)
+initial_velocity_min = 0.5
+initial_velocity_max = 1.0
+turbulence_enabled = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jfnw7"]
+
+[node name="DustParticles" type="GPUParticles3D" unique_id=254722175]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -9.59043, 6.36251, -5.41756)
+material_override = SubResource("StandardMaterial3D_hqgbs")
+cast_shadow = 0
+gi_mode = 0
+amount = 260
+lifetime = 0.09999999999999999
+collision_base_size = 0.0
+visibility_aabb = AABB(-20, -7, -15, 40, 15, 30)
+trail_lifetime = 10.0
+process_material = SubResource("ParticleProcessMaterial_svlpy")
+draw_pass_1 = SubResource("PlaneMesh_jfnw7")

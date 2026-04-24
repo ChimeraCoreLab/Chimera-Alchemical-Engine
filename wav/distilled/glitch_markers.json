@@ -1,0 +1,130 @@
+{
+    "intro_01_01.wav": {
+        "protocol": "SYSTEM",
+        "is_glitch": false
+    },
+    "intro_01_02.wav": {
+        "protocol": "VOID",
+        "is_glitch": true
+    },
+    "intro_01_03.wav": {
+        "protocol": "SYSTEM",
+        "is_glitch": false
+    },
+    "intro_01_04.wav": {
+        "protocol": "ROT",
+        "is_glitch": true
+    },
+    "intro_01_05.wav": {
+        "protocol": "SYSTEM",
+        "is_glitch": false
+    },
+    "intro_02_01.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "intro_02_02.wav": {
+        "protocol": "VOID",
+        "is_glitch": true
+    },
+    "intro_02_03.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "intro_02_04.wav": {
+        "protocol": "ROT",
+        "is_glitch": true
+    },
+    "intro_02_05.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "label_01_01.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "label_01_02.wav": {
+        "protocol": "VOID",
+        "is_glitch": true
+    },
+    "label_01_03.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "label_01_04.wav": {
+        "protocol": "ROT",
+        "is_glitch": true
+    },
+    "label_01_05.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "label_02.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "label_03.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "label_04_01.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "label_04_02.wav": {
+        "protocol": "VOID",
+        "is_glitch": true
+    },
+    "label_04_03.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "label_04_04.wav": {
+        "protocol": "ROT",
+        "is_glitch": true
+    },
+    "label_04_05.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "label_04_06.wav": {
+        "protocol": "CUT",
+        "is_glitch": true
+    },
+    "label_04_07.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "label_05.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "label_06_01.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "label_06_02.wav": {
+        "protocol": "VOID",
+        "is_glitch": true
+    },
+    "label_06_03.wav": {
+        "protocol": "NORMAL",
+        "is_glitch": false
+    },
+    "outro_final_01.wav": {
+        "protocol": "SYSTEM",
+        "is_glitch": false
+    },
+    "outro_final_02.wav": {
+        "protocol": "VOID",
+        "is_glitch": true
+    },
+    "outro_final_03.wav": {
+        "protocol": "SYSTEM",
+        "is_glitch": false
+    },
+    "outro_final_04.wav": {
+        "protocol": "SHUTDOWN",
+        "is_glitch": true
+    }
+}

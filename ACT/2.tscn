@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://bf17ipannmiqh"]
+
+[ext_resource type="VideoStream" uid="uid://dkyun37eqwqw5" path="res://o.ogv" id="1_wf0rn"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_lk5h5"]
+viewport_path = NodePath("SubViewport5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_538q8"]
+resource_local_to_scene = true
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_lk5h5")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_c573i"]
+size = Vector2(1, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="SubViewport5" type="SubViewport" parent="."]
+size = Vector2i(1920, 1080)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="SubViewport5"]
+offset_right = 40.0
+offset_bottom = 40.0
+stretch = true
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="SubViewport5/SubViewportContainer"]
+layout_mode = 2
+stream = ExtResource("1_wf0rn")
+autoplay = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.18904513, 1.3912175)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.1843631, -0.9828582, 0, 0.9828582, 0.1843631, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_538q8")
+mesh = SubResource("PlaneMesh_c573i")

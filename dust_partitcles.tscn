@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cqi6dafigtmtr"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sj08i"]
+load_path = "res://.godot/imported/key.png-c86ef3fa204ab0a9ceb2b45ad3095684.etc2.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hqgbs"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0.94917506, 0.8886214, 0.8899364, 1)
+albedo_texture = SubResource("CompressedTexture2D_sj08i")
+point_size = 19.6
+fov_override = 87.3
+
+[sub_resource type="Gradient" id="Gradient_yrb4k"]
+offsets = PackedFloat32Array(0, 0.179153, 0.299674, 0.700326, 0.788274, 1)
+colors = PackedColorArray(1, 1, 1, 0, 0.972581, 0.972581, 0.972581, 0.507246, 0.945946, 0.945946, 0.945946, 1, 1, 1, 1, 1, 1, 1, 1, 0.561644, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_emh2m"]
+gradient = SubResource("Gradient_yrb4k")
+
+[sub_resource type="Curve" id="Curve_6bnng"]
+_data = [Vector2(0, 0), 0.0, 2.52403, 0, 0, Vector2(0.488166, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -2.63376, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_wegib"]
+curve = SubResource("Curve_6bnng")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_svlpy"]
+lifetime_randomness = 0.17
+emission_shape = 3
+emission_box_extents = Vector3(40, 15, 30)
+direction = Vector3(10, 0, 0)
+initial_velocity_min = 274.83
+initial_velocity_max = 322.28998
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("CurveTexture_wegib")
+color_ramp = SubResource("GradientTexture1D_emh2m")
+turbulence_enabled = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jfnw7"]
+
+[node name="DustParticles" type="GPUParticles3D" unique_id=254722175]
+transform = Transform3D(0.044055223, -0.9990291, 0, 0.9990291, 0.044055223, 0, 0, 0, 1, -9.59043, 6.36251, -5.41756)
+material_override = SubResource("StandardMaterial3D_hqgbs")
+amount = 500
+speed_scale = 0.5
+collision_base_size = 0.0
+visibility_aabb = AABB(-20, -7, -15, 40, 15, 30)
+trail_lifetime = 10.0
+process_material = SubResource("ParticleProcessMaterial_svlpy")
+draw_pass_1 = SubResource("PlaneMesh_jfnw7")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bbkmm3eiym8vg"
+path="res://.godot/imported/enter.mp3-311ff85a5a7d4cca1542e7905be76549.mp3str"
+
+[deps]
+
+source_file="res://Uni app/enter.mp3"
+dest_files=["res://.godot/imported/enter.mp3-311ff85a5a7d4cca1542e7905be76549.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://762p8waep57q"
+path="res://.godot/imported/ocean.mp3-c2adedf08bdc22f25c24bb0670530b61.mp3str"
+
+[deps]
+
+source_file="res://Uni app/ocean.mp3"
+dest_files=["res://.godot/imported/ocean.mp3-c2adedf08bdc22f25c24bb0670530b61.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

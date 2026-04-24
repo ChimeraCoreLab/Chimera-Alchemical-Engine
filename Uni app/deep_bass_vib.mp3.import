@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://1p8f3pb52wck"
+path="res://.godot/imported/deep_bass_vib.mp3-8f6ae9b5aa4336f1af4ea6bc5aa3d003.mp3str"
+
+[deps]
+
+source_file="res://Uni app/deep_bass_vib.mp3"
+dest_files=["res://.godot/imported/deep_bass_vib.mp3-8f6ae9b5aa4336f1af4ea6bc5aa3d003.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
